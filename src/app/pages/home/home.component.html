@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div
+      [ngStyle]="{
+        'background-color': inputColor
+      }"
+      class="col-9 py-5"
+    >
+      <div>
+        <label for="exampleColorInput" class="form-label">Interactúe con los inputs para cambiar de color</label>
+        <input
+          [(ngModel)]="inputColor"
+          type="color"
+          title="Choose your color"
+          name="inputColor"
+          class="form-control form-control-color"
+        />
+      </div>
+      <app-hero></app-hero>
+    </div>
+    <div class="col-3">
+      <app-sidebar
+        (onColor)="inputColor = $event"
+        [bgColor]="inputColor"
+      ></app-sidebar>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Shanthal</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            routerLink="/home"
+            routerLinkActive="router-link-active"
+            class="nav-link active"
+            aria-current="page"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a routerLink="/proyectos" class="nav-link active" aria-current="page"
+            >Proyectos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contacto" class="nav-link active" aria-current="page"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-light" type="submit">Descargar CV</button>
+      </form>
+    </div>
+  </div>
+</nav>

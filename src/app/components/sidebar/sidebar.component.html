@@ -1,0 +1,22 @@
+<div
+  class="py-5 px-2"
+  [ngStyle]="{
+    'background-color': bgColor
+  }"
+>
+  <input
+    [(ngModel)]="bgColor"
+    (input)="changeColor()"
+    type="color"
+    title="Choose your color"
+    name="inputColor"
+    class="form-control form-control-color"
+  />
+  <div class="list-group mt-5">
+    <a routerLink="/home" class="list-group-item list-group-item-action active">Inicio</a>
+    <a routerLink="/proyectos" class="list-group-item list-group-item-action">Proyectos</a>
+    <a routerLink="/contacto" class="list-group-item list-group-item-action">Contacto</a>
+  </div>
+
+  <button class="btn btn-primary mt-5">Descargar CV</button>
+</div>
